@@ -8,6 +8,7 @@ class mysql {
 # Ensure mysql runs
   service { "mysql":
     ensure => running,
+    require => Package["mysql-server"],
   }
 
 }
