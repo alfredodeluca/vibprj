@@ -75,6 +75,7 @@ Vagrant.configure(2) do |config|
       puppet.manifest_file = "default.pp"
       puppet.module_path = "modules"
     end
+  config.vm.network :forwarded_port, guest: 80, host: 80
   config.vm.synced_folder "docroot/", "/vagrant/docroot/", :owner => "www-data"
 
   end
