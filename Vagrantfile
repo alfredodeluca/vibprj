@@ -68,11 +68,12 @@
   # SHELL
 
 Vagrant.configure(2) do |config|
-  config.vm.box = "ubuntu/precise32"
-  config.vm.provision :puppet do |puppet|
-    puppet.manifests_path = "manifests"
-    puppet.manifest_file = "default.pp"
-    puppet.module_path = "modules"
+  config.vm.define "vibrato" do |vibrato|
+    vibrato.vm.box = "ubuntu/precise32"
+    vibrato.vm.provision :puppet do |puppet|
+      puppet.manifests_path = "manifests"
+      puppet.manifest_file = "default.pp"
+      puppet.module_path = "modules"
+    end
   end
-
 end

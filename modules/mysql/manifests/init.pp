@@ -1,4 +1,4 @@
-class { mysql
+class mysql {
 
 # Install mysql server
   package { "mysql-server":
