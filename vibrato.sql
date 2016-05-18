@@ -1,3 +1,14 @@
 create database vibrato;
 use vibrato;
 create table employee (id int, fname varchar(255),lname varchar(255),location varchar(255));
+insert into employee ( id, fname,lname,location ) values ( "20","Alfredo","Smith","Mel");
+insert into employee ( id, fname,lname,location ) values ( "30","Craig","Williams","Syd");
+insert into employee ( id, fname,lname,location ) values ( "394","Steen","Jackson","Mel");
+insert into employee ( id, fname,lname,location ) values ( "994","Dylan","Moore","Syd");
+insert into employee ( id, fname,lname,location ) values ( "923","Juma","Thomas","Syd");
+insert into employee ( id, fname,lname,location ) values ( "320","Bronte","White","Mel");
+insert into employee ( id, fname,lname,location ) values ( "46","Jennifer","Martin","Mel");
+insert into employee ( id, fname,lname,location ) values ( "2","Taylor","Harris","Mel");
+insert into employee ( id, fname,lname,location ) values ( "902","Reece","Clark","Syd");
+insert into employee ( id, fname,lname,location ) values ( "888","Rita","King","Mel");
+insert into employee ( id, fname,lname,location ) values ( "34","Anthon","Allen","Syd");
