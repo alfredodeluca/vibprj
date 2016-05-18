@@ -28,6 +28,7 @@ class apache {
     notify => Service["apache2"],
   }
 
+# Refresh apache if the file changes
   service { "apache2":
     ensure => running,
     require => Package["apache2"],

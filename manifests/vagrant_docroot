@@ -1,4 +1,4 @@
-<VirtualHost *:80>
+<VirtualHost *:81>
   ServerName myapp
   DocumentRoot /vagrant/docroot
   <Directory /vagrant/docroot>
