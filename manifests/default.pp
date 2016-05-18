@@ -1,3 +1,3 @@
 include apache
-#include php
+include php
 include mysql
