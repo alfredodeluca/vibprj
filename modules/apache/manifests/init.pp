@@ -5,6 +5,7 @@ class apache {
     ensure => present,
   }
 
+
 # Enable the website
   file {"/etc/apache2/sites-enabled":
     ensure => directory,
@@ -26,6 +27,13 @@ class apache {
     target => "/etc/apache2/sites-available/vagrant_docroot",
     require => File["/etc/apache2/sites-available/vagrant_docroot"],
     notify => Service["apache2"],
+  }
+
+# rewrite enabled
+  file { "/etc/apache2/mods-enabled/rewrite.load":
+    ensure => link,
+    target => "/etc/apache2/mods-available/rewrite.load",
+    require => Package["apache2"]
   }
 
 # Refresh apache if the file changes
