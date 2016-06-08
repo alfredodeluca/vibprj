@@ -15,20 +15,18 @@
   Apellido: <input type="text" name="email" value="<?php echo $email;?>">
   <span class="error">* <?php echo $emailErr;?></span>
   <br><br>
-  Contrenunda: <input type="text" name="email" value="<?php echo $email;?>">
+  Contrasena: <input type="text" name="email" value="<?php echo $email;?>">
   <span class="error">* <?php echo $emailErr;?></span>
   <br><br>
   DNI: <input type="text" name="website" value="<?php echo $website;?>">
   <span class="error"><?php echo $websiteErr;?></span>
   <br><br>
-  Comment: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
-  <br><br>
-  Gender:
-  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="Mujer") echo "checked";?> value="Mujer">Female
-  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="Hombre") echo "checked";?> value="Hombre">Male
+  Sexo:
+  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="Mujer") echo "checked";?> value="Mujer">Mujer
+  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="Hombre") echo "checked";?> value="Hombre">Hombre
   <span class="error">* <?php echo $genderErr;?></span>
   <br><br>
-  <input type="submit" name="submit" value="Submit">  
+  <input type="submit" name="submit" value="Guardar Cambios"> <input type="submit" name="submit" value="Borrar los datos introducidos">  
 </form>
 
 <?php
