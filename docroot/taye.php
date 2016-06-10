@@ -4,15 +4,18 @@
 <body>  
 
 <h2>Rellena tu CV</h2>
+<?php
+$nombre = $apellido = $contrasena = $dni = $sexo = "";
+?>
 
 <form method="post">  
-  Nombre: <input type="text" name="nombre" value="">
+  Nombre: <input type="text" name="nombre" value="<?php echo $nombre;?>">
   <br><br>
-  Apellido: <input type="text" name="apellido" value="">
+  Apellido: <input type="text" name="apellido" value="<?php echo $apellido;?>">
   <br><br>
-  Contrasena: <input type="text" name="contrasena" value="">
+  Contrasena: <input type="text" name="contrasena" value="<?php echo $contrasena;?>">
   <br><br>
-  DNI: <input type="text" name="dni" value="">
+  DNI: <input type="text" name="dni" value="<?php echo $dni;?>">
   <br><br>
   Sexo:
   <input type="radio" name="sexo" value="Mujer">Mujer
@@ -22,15 +25,15 @@
 </form>
 
 <?php
-echo $name;
+echo $nombre;
 echo "<br>";
-echo $email;
+echo $apellido;
 echo "<br>";
-echo $website;
+echo $contrasena;
 echo "<br>";
-echo $comment;
+echo $dni;
 echo "<br>";
-echo $gender;
+echo $sexo;
 ?>
 
 </body>
