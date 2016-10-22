@@ -67,6 +67,7 @@
   #   sudo apt-get install -y apache2
   # SHELL
 SUBNET="192.168.100"
+TEST="Alfredo"
 
 Vagrant.configure(2) do |config|
   config.vm.define "vibrato" do |vibrato|
